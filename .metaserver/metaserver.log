@@ -1,0 +1,5 @@
+22:40:47.801 INFO  s.m.l.Main$ - Starting server in /Users/marcy/workspace/BizReach/cup-book
+22:40:47.813 INFO  s.m.l.Main$ - Classpath: /Users/marcy/scalameta_lsp
+22:40:50.125 INFO  s.m.l.Main$ - Listening....
+22:40:50.184 INFO  s.m.l.ScalametaServices - Initialized with /Users/marcy/workspace/BizReach/cup-book, InitializeParams(93948,/Users/marcy/workspace/BizReach/cup-book,ClientCapabilities())
+22:40:50.310 INFO  s.m.l.ScalametaServices - Client is initialized

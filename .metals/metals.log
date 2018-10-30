@@ -1,0 +1,70 @@
+22:32:29.798 INFO  s.meta.metals.Main$ - Starting server in /Users/marcy/workspace/BizReach/cup-book
+22:32:29.813 INFO  s.meta.metals.Main$ - Classpath: /Users/marcy/.atom/packages/ide-scala/coursier
+22:32:32.952 INFO  s.m.m.Formatter$ - Classloading scalafmt with 28 downloaded jars
+22:32:33.610 INFO  s.meta.metals.Main$ - Listening....
+22:32:33.673 INFO  s.m.m.MetalsServices - Initialized with /Users/marcy/workspace/BizReach/cup-book, InitializeParams(83516,/Users/marcy/workspace/BizReach/cup-book/,ClientCapabilities())
+22:32:33.718 INFO  s.m.m.MetalsServices - File /Users/marcy/workspace/BizReach/cup-book/.metals/buildinfo/root/compile.properties changed
+22:32:33.771 INFO  s.m.m.c.ScalacProvider - Loading new compiler from config CompilerConfig(sources={+1}, scalacOptions=-Yrangepos -Xplugin-require:semanticdb -Xplugin:/Users/marcy/.ivy2/cache/org.scalameta/semanticdb-scalac_2.12.4/jars/semanticdb-scalac_2.12.4-2.1.7.jar, dependencyClasspath={+1}, classDirectory=/Users/marcy/workspace/BizReach/cup-book/target/scala-2.12/classes, sourceJars={+21}, origin=/Users/marcy/workspace/BizReach/cup-book/.metals/buildinfo/root/compile.properties, scalaVersion=2.12.4)
+22:32:33.793 INFO  s.m.m.MetalsServices - File /Users/marcy/workspace/BizReach/cup-book/project/target/active.json changed
+22:32:33.955 INFO  s.m.m.s.InMemorySymbolIndex - Indexing classpath entry /Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip
+22:32:33.960 INFO  s.m.m.MetalsServices - Client is initialized
+22:32:33.990 INFO  s.m.m.MetalsServices - Configuration updated Configuration(Sbt(Enabled(true),),Scalac(Enabled(false),Enabled(false)),Scalafmt(true,false,1.4.0,Some(.scalafmt.conf)),Scalafix(true,Some(.scalafix.conf)),Search(true,true),Enabled(true),Enabled(false),Enabled(false))
+22:32:36.627 ERROR s.m.m.s.InMemorySymbolIndex - Failed to index jar:file:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/com/sun/jmx/snmp/IPAcl/ParserConstants.java
+java.lang.IllegalArgumentException: 1803 is not a valid offset, allowed [0..1801]
+	at org.langmeta.internal.inputs.InternalInput.offsetToLine(InternalInput.scala:42)
+	at org.langmeta.internal.inputs.InternalInput.offsetToLine$(InternalInput.scala:36)
+	at org.langmeta.inputs.Input$VirtualFile.offsetToLine(Input.scala:74)
+	at org.langmeta.inputs.Position$Range.endLine(Position.scala:40)
+	at org.langmeta.languageserver.InputEnrichments$XtensionInputOffset$.toIndexRange$extension(InputEnrichments.scala:32)
+	at scala.meta.metals.search.InMemorySymbolIndex.$anonfun$indexDocument$1(InMemorySymbolIndex.scala:193)
+	at scala.meta.metals.search.InMemorySymbolIndex.$anonfun$indexDocument$1$adapted(InMemorySymbolIndex.scala:181)
+	at scala.collection.Iterator.foreach(Iterator.scala:929)
+	at scala.collection.Iterator.foreach$(Iterator.scala:929)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1417)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:71)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:70)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
+	at scala.meta.metals.search.InMemorySymbolIndex.indexDocument(InMemorySymbolIndex.scala:181)
+	at scala.meta.metals.search.InMemorySymbolIndex.$anonfun$indexDatabase$1(InMemorySymbolIndex.scala:158)
+	at scala.collection.Iterator.foreach(Iterator.scala:929)
+	at scala.collection.Iterator.foreach$(Iterator.scala:929)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1417)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:71)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:70)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
+	at scala.meta.metals.search.InMemorySymbolIndex.indexDatabase(InMemorySymbolIndex.scala:157)
+	at scala.meta.metals.search.InMemorySymbolIndex.$anonfun$indexDependencyClasspath$7(InMemorySymbolIndex.scala:144)
+	at scala.collection.immutable.List.foreach(List.scala:389)
+	at scala.meta.metals.search.InMemorySymbolIndex.$anonfun$indexDependencyClasspath$6(InMemorySymbolIndex.scala:137)
+	at scala.meta.metals.search.InMemorySymbolIndex.$anonfun$indexDependencyClasspath$6$adapted(InMemorySymbolIndex.scala:136)
+	at scala.meta.metals.storage.LevelDBMap$.withDB(LevelDBMap.scala:85)
+	at scala.meta.metals.search.InMemorySymbolIndex.$anonfun$indexDependencyClasspath$1(InMemorySymbolIndex.scala:136)
+	at monix.eval.internal.TaskRunLoop$.monix$eval$internal$TaskRunLoop$$loop$1(TaskRunLoop.scala:187)
+	at monix.eval.internal.TaskRunLoop$RestartCallback$1.onSuccess(TaskRunLoop.scala:119)
+	at monix.eval.Task$.$anonfun$forkedUnit$2(Task.scala:1463)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+22:32:38.183 INFO  s.m.m.s.InMemorySymbolIndex - Indexing classpath entry /Users/marcy/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.4-sources.jar
+22:32:38.340 INFO  s.m.m.s.InMemorySymbolIndex - Indexing classpath entry /Users/marcy/.ivy2/cache/org.scalatest/scalatest_2.12/srcs/scalatest_2.12-3.0.5-sources.jar
+22:32:38.489 INFO  s.m.m.mtags.Mtags$ - Indexing 492 source files
+22:32:41.952 INFO  s.m.m.mtags.Mtags$ - Progress 40%, 200 files indexed out of total 492 (15,919 loc/s)
+22:32:43.623 INFO  s.m.m.mtags.Mtags$ - Progress 81%, 400 files indexed out of total 492 (22,929 loc/s)
+22:32:45.441 INFO  s.m.m.mtags.Mtags$ - Progress 100%, 492 files indexed out of total 492 (25,174 loc/s)
+22:32:45.442 INFO  s.m.m.mtags.Mtags$ - Completed indexing 492 files with total 151,048 lines of code
+22:32:45.675 INFO  s.m.m.s.InMemorySymbolIndex - Indexing classpath entry /Users/marcy/.ivy2/cache/org.scalactic/scalactic_2.12/srcs/scalactic_2.12-3.0.5-sources.jar
+22:32:45.690 INFO  s.m.m.mtags.Mtags$ - Indexing 76 source files
+22:32:46.101 INFO  s.m.m.mtags.Mtags$ - Completed indexing 76 files with total 22,266 lines of code
+22:32:46.132 INFO  s.m.m.s.InMemorySymbolIndex - Indexing classpath entry /Users/marcy/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/srcs/scala-xml_2.12-1.0.6-sources.jar
+22:32:46.143 INFO  s.m.m.s.InMemorySymbolIndex - Indexing classpath entry /Users/marcy/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.12.4-sources.jar
+22:32:46.253 INFO  s.m.m.s.InMemorySymbolIndex - Indexing classpath entry /Users/marcy/.ivy2/cache/org.scalameta/semanticdb-scalac_2.12.4/srcs/semanticdb-scalac_2.12.4-2.1.7-sources.jar
+22:32:46.275 INFO  s.m.m.s.InMemorySymbolIndex - Indexing classpath entry /Users/marcy/.ivy2/cache/jline/jline/srcs/jline-2.14.5-sources.jar
+22:32:46.297 INFO  s.m.m.s.InMemorySymbolIndex - Indexing classpath entry /Users/marcy/.ivy2/cache/org.scala-lang/scala-compiler/srcs/scala-compiler-2.12.4-sources.jar
+22:37:07.758 INFO  s.m.m.s.InMemorySymbolIndex - resolveName at Uri(file:///Users/marcy/workspace/BizReach/cup-book/src/main/scala/MyList.scala):9:32
+22:37:12.678 INFO  s.m.m.s.InMemorySymbolIndex - resolveName at Uri(file:///Users/marcy/workspace/BizReach/cup-book/src/main/scala/MyList.scala):9:13
+22:37:14.472 INFO  s.m.m.s.InMemorySymbolIndex - resolveName at Uri(file:///Users/marcy/workspace/BizReach/cup-book/src/main/scala/MyList.scala):9:13
+22:37:17.082 INFO  s.m.m.s.InMemorySymbolIndex - resolveName at Uri(file:///Users/marcy/workspace/BizReach/cup-book/src/main/scala/MyList.scala):9:28
+22:37:20.739 INFO  s.m.m.s.InMemorySymbolIndex - resolveName at Uri(file:///Users/marcy/workspace/BizReach/cup-book/src/main/scala/MyList.scala):1:12
+22:37:22.451 INFO  s.m.m.s.InMemorySymbolIndex - resolveName at Uri(file:///Users/marcy/workspace/BizReach/cup-book/src/main/scala/MyList.scala):0:3
+22:38:47.462 INFO  s.m.m.MetalsServices - Shutting down...
+22:38:47.478 INFO  s.m.m.MetalsServices - exit(0)

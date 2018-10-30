@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/marcy/workspace/BizReach/cup-book/src/main/scala/MyList.scala:8:1: ':' expected but ')' found.[0m
+[0m[[0m[31merror[0m] [0m[0m) extends MyList[A][0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/marcy/workspace/BizReach/cup-book/src/main/scala/MyList.scala:12:2: identifier expected but eof found.[0m
+[0m[[0m[31merror[0m] [0m[0m}[0m
+[0m[[0m[31merror[0m] [0m[0m ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
