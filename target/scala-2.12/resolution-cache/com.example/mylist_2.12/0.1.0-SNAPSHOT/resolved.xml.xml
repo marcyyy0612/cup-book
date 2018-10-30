@@ -4,7 +4,7 @@
 		module="mylist_2.12"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20181030223210"
+		publication="20181030225431"
 	>
 		<description>
 		MyList
@@ -30,9 +30,8 @@
 		<artifact name="mylist_2.12" type="doc" ext="jar" conf="compile" e:classifier="javadoc"/>
 	</publications>
 	<dependencies>
-		<dependency org="org.scala-lang" name="scala-compiler" rev="2.12.4" conf="scala-tool->default,optional(default)"/>
-		<dependency org="org.scala-lang" name="scala-library" rev="2.12.4" conf="scala-tool->default,optional(default);compile->default(compile)"/>
+		<dependency org="org.scala-lang" name="scala-compiler" rev="2.12.5" conf="scala-tool->default,optional(default)"/>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.12.5" conf="scala-tool->default,optional(default);compile->default(compile)"/>
 		<dependency org="org.scalatest" name="scalatest_2.12" rev="3.0.5" conf="test->default(compile)"/>
-		<dependency org="org.scalameta" name="semanticdb-scalac_2.12.4" rev="2.1.7" conf="plugin->default(compile)"/>
 	</dependencies>
 </ivy-module>
